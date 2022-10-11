@@ -1,9 +1,13 @@
 import React from 'react';
+import './Home.css';
 
 const Home = () => {
     return (
         <div>
-            <h1>home</h1>
+            <div className='img'>
+
+                <h1>Get KnowLedgeBit and test your knowledge</h1>
+            </div>
         </div>
     );
 };

@@ -1,0 +1,14 @@
+.img {
+    background-image: url("./think.jpg");
+    background-size: cover;
+    height: 550px;
+}
+
+.img h1 {
+    /* color: rgb(186, 186, 119); */
+    color: rgb(8, 15, 8);
+    font-weight: 900;
+    padding-top: 21%;
+    font-size: 55px;
+    letter-spacing: 9px;
+}
