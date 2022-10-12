@@ -6,6 +6,7 @@ import Home from './Component/Home/Home';
 import Statistics from './Component/Statistics/Statistics';
 import Blog from './Component/Blog/Blog';
 import StartQuiz from './Component/StartQuiz/StartQuiz';
+import Error from './Component/Error/Error';
 
 function App() {
   const router = createBrowserRouter([
@@ -38,7 +39,7 @@ function App() {
       ]
 
     },
-    { path: '*', element: <div><h1>Your request is not found.</h1></div> }
+    { path: '*', element: <Error></Error> }
   ])
   return (
     <div>
