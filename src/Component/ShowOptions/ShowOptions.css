@@ -17,4 +17,5 @@
 .showoptions p:hover {
     background-color: #cd487c;
     color: white;
+    cursor: pointer;
 }
