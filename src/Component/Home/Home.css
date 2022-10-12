@@ -5,7 +5,7 @@
 }
 
 .img h1 {
-    /* color: rgb(186, 186, 119); */
+
     color: rgb(8, 15, 8);
     font-weight: 900;
     padding-top: 21%;
@@ -18,4 +18,38 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     margin: 5% 5%;
+}
+
+@media screen and (max-width:767px) {
+    .topic-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin: 5% 5%;
+    }
+
+    .img h1 {
+
+        color: rgb(8, 15, 8);
+        text-align: center;
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+
+    .img {
+        background-image: url("./think.jpg");
+        background-size: cover;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .img h1 {
+
+        color: rgb(8, 15, 8);
+        text-align: center;
+        font-size: 45px;
+        letter-spacing: 5px;
+        letter-spacing: 9px;
+    }
 }

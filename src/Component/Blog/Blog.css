@@ -1,10 +1,29 @@
 .blog-container {
     width: 70%;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 6%;
     text-align: justify;
 }
 
 .blogs {
     margin: 7% 0;
+}
+
+@media screen and (max-width:767px) {
+    .blog-container {
+        width: 90%;
+        margin-left: 2%;
+        margin-top: 6%;
+        text-align: justify;
+    }
+
+    .blogs h4 {
+        font-size: 20px;
+
+    }
+
+    .blogs p {
+        font-size: 16px;
+        text-align: left;
+    }
 }

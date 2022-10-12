@@ -29,3 +29,21 @@
     font-weight: bold;
     font-size: 29px;
 }
+
+@media screen and (max-width:767px) {
+    .navigations a {
+        text-decoration: none;
+        padding: 5%;
+        color: black;
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .navigations a {
+        text-decoration: none;
+        padding: 7%;
+        color: black;
+        font-size: 21px;
+    }
+}

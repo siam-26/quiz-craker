@@ -8,12 +8,17 @@
 
 .topic img {
     height: 300px;
-    width: 85%;
+    width: 100%;
     margin-top: 4%;
     background-color: rgb(208, 201, 201);
     border-radius: 8px;
 
 
+}
+
+.topic h3 {
+    margin-top: 2%;
+    margin-left: 7%;
 }
 
 .topic-inside-div {
@@ -43,3 +48,27 @@
 .topic-inside-div button:hover {
     opacity: 0.9;
 }
+
+@media screen and (max-width:767px) {
+    .topic img {
+        height: 150px;
+        width: 100%;
+        margin-top: 4%;
+        background-color: rgb(208, 201, 201);
+        border-radius: 8px;
+
+
+    }
+}
+
+/* @media screen and (min-width:768px) and (max-width:991px) {
+    .topic img {
+        height: 150px;
+        width: 100%;
+        margin-top: 4%;
+        background-color: rgb(208, 201, 201);
+        border-radius: 8px;
+
+
+    }
+} */
