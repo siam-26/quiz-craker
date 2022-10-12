@@ -1,8 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ShowTopic.css';
 
 const ShowTopics = ({ topic }) => {
-    const { name, logo, total } = topic;
+    const { id, name, logo, total } = topic;
+    const navigate = useNavigate();
+    const startQuizHandler = () => {
+        return navigate(`/start/${id}`);
+    }
     return (
 
         <div className='topic'>
@@ -11,7 +16,7 @@ const ShowTopics = ({ topic }) => {
             <h3>{name}</h3>
             <div className='topic-inside-div'>
                 <p>Total quiz: {total}</p>
-                <button>Start Quiz</button>
+                <button onClick={startQuizHandler}>Start Quiz</button>
             </div>
         </div>
 
