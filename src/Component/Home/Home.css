@@ -1,7 +1,7 @@
 .img {
     background-image: url("./think.jpg");
     background-size: cover;
-    height: 550px;
+    height: 600px;
 }
 
 .img h1 {
@@ -11,4 +11,11 @@
     padding-top: 21%;
     font-size: 55px;
     letter-spacing: 9px;
+}
+
+.topic-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 5% 5%;
 }
