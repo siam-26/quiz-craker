@@ -9,7 +9,7 @@ const Navigations = () => {
                 <Link to='#'>KnowLedgeBIT</Link>
             </div>
             <div className='topics'>
-                <Link to='/home'>Home</Link>
+                <Link to='/'>Home</Link>
                 <Link to='/statistics'>Statistics</Link>
                 <Link to='/blog'>Blog</Link>
             </div>

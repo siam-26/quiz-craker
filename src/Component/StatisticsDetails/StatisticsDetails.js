@@ -1,8 +1,11 @@
 import React from 'react';
-// import { ComposedChart, Line } from 'recharts';
+import './StatisticsDetails.css';
 import {
-    LineChart,
+    ResponsiveContainer,
+    ComposedChart,
     Line,
+    Area,
+    Bar,
     XAxis,
     YAxis,
     CartesianGrid,
@@ -10,22 +13,32 @@ import {
     Legend
 } from "recharts";
 
+const StatisticsDetails = ({ statistics }) => {
 
-const StatisticsDetails = ({ showStatistics }) => {
-    const { total } = showStatistics;
-    console.log(showStatistics.total);
     return (
-        <div>
-            {/* <ComposedChart width={500}
-                height={400}
-                data={showStatistics}>
-                <Line type="monotone" dataKey="total" stroke="#ff7300" />
-                <Line type="monotone" dataKey="total" stroke="#ff7300" />
-            </ComposedChart> */}
+        <div className='chart' style={{ width: "100%", height: 300 }}>
+            <ResponsiveContainer>
+                <ComposedChart
+                    width={500}
+                    height={400}
+                    data={statistics}
+                    margin={{
+                        top: 20,
+                        right: 20,
+                        bottom: 20,
+                        left: 20
+                    }}
+                >
+                    <CartesianGrid stroke="#f5f5f5" />
+                    <XAxis dataKey="name" scale="band" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Area type="monotone" dataKey="amt" fill="#8884d8" stroke="#8884d8" />
+                    <Bar dataKey="total" barSize={20} fill="#413ea0" />
 
-            <LineChart width={500} height={400} data={showStatistics}>
-                <Line type="monotone" dataKey={total} stroke="#82ca9d" />
-            </LineChart>
+                </ComposedChart>
+            </ResponsiveContainer>
         </div>
     );
 };

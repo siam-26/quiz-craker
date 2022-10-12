@@ -7,12 +7,7 @@ const Statistics = () => {
 
     return (
         <div>
-            {
-                statistics.data.map(showStatistics => <StatisticsDetails
-                    key={showStatistics.id}
-                    showStatistics={showStatistics}
-                ></StatisticsDetails>)
-            }
+            <StatisticsDetails statistics={statistics.data}></StatisticsDetails>
         </div>
     );
 };
