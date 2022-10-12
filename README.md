@@ -71,3 +71,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 # b6-quiz-crackerz-siam-26
+
+# Project Name
+KnowledgeBit
+
+# Live Link: https://dazzling-kangaroo-26257f.netlify.app
+# Project Features:
+• Quiz testing & check correct answers.
+• Added Toasts.
+• Added Recharts.
+• Answering some questions at Blog section.
