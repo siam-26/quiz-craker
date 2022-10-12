@@ -1,0 +1,21 @@
+.questions {
+    width: 70%;
+    margin-left: 17%;
+    margin-top: 5%;
+
+}
+
+.questions .question-child-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions h5 {
+    color: black;
+
+}
+
+.eyeIcon {
+    color: #cd487c;
+    font-size: 20px;
+}
